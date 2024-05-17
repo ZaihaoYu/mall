@@ -4,12 +4,13 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.practise.ecmall</groupId>
+  <groupId>com.mall.ecmall</groupId>
   <artifactId>ecmall</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>ecmall</name>
   <description>集合服务</description>
   <packaging>pom</packaging>
+
 
   <modules>
     <module>ecmall-ware</module>
@@ -17,6 +18,11 @@
     <module>ecmall-product</module>
     <module>ecmall-coupon</module>
     <module>ecmall-member</module>
+    <module>renren-fast</module>
+    <module>renren-generator</module>
+    <module>ecmall-common</module>
+
   </modules>
+
 
 </project>
