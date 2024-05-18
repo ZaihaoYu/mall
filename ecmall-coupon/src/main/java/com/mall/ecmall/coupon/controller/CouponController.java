@@ -1,5 +1,6 @@
 package com.mall.ecmall.coupon.controller;
 
+import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Map;
 
@@ -29,6 +30,13 @@ import com.mall.common.utils.R;
 public class CouponController {
     @Autowired
     private CouponService couponService;
+
+    @RequestMapping("/menber/list")
+    public R menbercoupons(){
+        CouponEntity couponEntity = new CouponEntity();
+        couponEntity.setCouponName("买一赠一");
+        return R.ok().put("coupons", Arrays.asList(couponEntity));
+    }
 
     /**
      * 列表

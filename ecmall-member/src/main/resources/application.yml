@@ -4,6 +4,12 @@ spring:
     password: root
     url: jdbc:mysql://13.231.10.127:3306/ecmall_ums
     driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  application:
+    name: ecmall-menber
 
 mybatis-plus:
   mapper-locations: classpath:/mapper/**/*.xml
